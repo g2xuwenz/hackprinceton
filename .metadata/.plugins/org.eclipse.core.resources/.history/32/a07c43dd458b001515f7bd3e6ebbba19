@@ -1,0 +1,14 @@
+package hackprinceton;
+
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HelloWorld {
+	
+	@RequestMapping("/HelloWorld")
+	public HelloWorld(){
+		System.out.println("Hello");
+	}
+}

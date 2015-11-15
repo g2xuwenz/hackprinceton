@@ -1,0 +1,17 @@
+package hackprinceton;
+
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class HelloWorld {
+	
+	@RequestMapping("/HelloWorld")
+	public ModelAndView print(){
+		System.out.println("Hello");
+		String viewName = "Hello";
+		return new ModelAndView(viewName);
+	}
+}

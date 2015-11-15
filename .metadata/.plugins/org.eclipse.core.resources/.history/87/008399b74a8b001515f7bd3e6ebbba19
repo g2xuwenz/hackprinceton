@@ -1,0 +1,23 @@
+package hackprinceton;
+
+import javax.ws.rs.Path;
+
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Component
+@Path("/helloworld")
+public class HelloWorld {
+	
+	@GET
+	@Path("/sayhellow")
+	public Response sayHello() {
+
+		String result = transactionBo.save();
+
+		return Response.status(200).entity(result).build();
+
+	}
+}
