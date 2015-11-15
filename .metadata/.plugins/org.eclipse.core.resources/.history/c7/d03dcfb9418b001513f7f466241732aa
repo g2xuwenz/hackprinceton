@@ -1,7 +1,0 @@
-package hackprinceton;
-
-public class HelloWorld {
-	public HelloWorld(){
-		
-	}
-}
